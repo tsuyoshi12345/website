@@ -1,0 +1,36 @@
+環境構築手順
+
+#コンテナ作成
+docker-compose build
+#reactに必要なパッケージをインストール
+docker-compose run --rm frontend sh -c "cd react-project && npm install"
+#reactのアプリをビルド
+docker compose run --rm frontend sh -c "cd /src/react-project && npm run build"
+#コンテナ立ち上げ
+docker-compose up -d 
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+ページの更新
+#サイトの動作確認はコードを保存して、ページをリロードする
+
+開発中に使うコマンド
+
+#コンテナ停止（開発が終わったらやっておく）
+docker-compose stop
+
+#コンテナ立ち上げ
+docker-compose up -d
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+サイトが完成した時に使う
+
+#本番環境の更新
+docker compose run --rm frontend sh -c "cd /src/react-project && npm run build"
+
+
+
+参考文献
+ディレクトリ構成
+https://cloudsmith.co.jp/blog/virtualhost/docker/2022/12/2241971.html
+react+nginxの連携
+https://yossi-note.com/react_applications_and_updating_nginx_servers/

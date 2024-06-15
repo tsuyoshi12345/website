@@ -1,0 +1,4 @@
+FROM node:22.3.0
+WORKDIR /src
+ENV TZ=Asia/Tokyo
+EXPOSE 3000

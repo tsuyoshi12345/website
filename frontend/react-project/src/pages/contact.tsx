@@ -88,5 +88,4 @@ const Contact: React.FC = () => {
     </div>
   );
 };
-
 export default Contact;

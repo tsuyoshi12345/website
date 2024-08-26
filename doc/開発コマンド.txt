@@ -21,6 +21,9 @@ docker-compose stop
 #コンテナ立ち上げ
 docker-compose up -d
 
+`npm update`でインストールされていないときは
+`docker exec website-frontend-1 sh -c "cd react-project && npm install"`を実行
+
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 サイトが完成した時に使う
 

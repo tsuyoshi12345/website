@@ -1,0 +1,9 @@
+### マージされたらやること
+githubページへ移動
+Sync forkのボタンを押し、updateを押す
+vscodeに移動し、メインブランチであるか確認して
+`git pull`
+featureブランチへ移動して
+`git merge main`
+今回はパッケージインストールしたから
+`npm update`

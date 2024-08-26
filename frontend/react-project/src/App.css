@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding-top: 120px;
 }
 
 .App-header {
@@ -8,6 +9,10 @@
   color: white;
   justify-content: space-between;
   align-items: center;
+  position: fixed; /* ヘッダーの位置を固定 */
+  top: 0; /* 画面の上部に固定 */
+  width: 100%; /* ヘッダーの幅を全画面に設定 */
+  z-index: 1000; /* ヘッダーが他のコンテンツの上に表示されるように設定 */
 }
 
 .title {

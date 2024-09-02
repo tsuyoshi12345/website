@@ -23,3 +23,8 @@ export const createPost = async (post: Post): Promise<Post> => {
 export const deletePost = async (id: number): Promise<void> => {
     await axios.delete(`${API_URL}${id}/`);
 };
+
+export const getPostById = async (id: number): Promise<Post> => {
+    const response = await axios.get<Post>(`${API_URL}${id}/`);
+    return response.data;
+};

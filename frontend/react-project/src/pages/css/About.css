@@ -1,0 +1,48 @@
+/*body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }*/
+  
+  .container {
+    display: grid;
+    grid-template-areas: 
+      "image1 desc1"
+      "desc2 image2"
+      "image3 desc3";
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .image1 { grid-area: image1; }
+  .desc1 { grid-area: desc1; }
+  .image2 { grid-area: image2; }
+  .desc2 { grid-area: desc2; }
+  .image3 { grid-area: image3; }
+  .desc3 { grid-area: desc3; }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .description {
+    max-width: 200px;
+  }
+  

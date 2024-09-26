@@ -9,7 +9,7 @@ services:
       - "3000:3000"
     volumes:
       - ./frontend:/src # ローカルをコンテナ内にマウント
-    command: sh -c "cd react-project && npm start" #コンテナを立ち上げたときに自動的にbuildする
+    command: sh -c "cd react-project && npm install && npm start" #コンテナを立ち上げたときに自動的にbuildする
     environment:
       - WATCHPACK_POLLING=true
 

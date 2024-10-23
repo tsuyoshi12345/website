@@ -8,6 +8,7 @@ import Blog from './pages/blog';
 import Media from './pages/media';
 import Contact from './pages/contact';
 import Access from './pages/access';
+import NotFound from './pages/404';
 
 const App: React.FC = () => {
   return (
@@ -37,6 +38,7 @@ const App: React.FC = () => {
             <Route path="/media" element={<Media />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/access" element={<Access />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <footer className="App-footer">

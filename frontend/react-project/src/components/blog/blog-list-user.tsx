@@ -3,7 +3,7 @@ import { getPosts, createPost, deletePost, Post } from './get-blog';
 import { Card, CardContent, TextField, Button, Grid, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const BlogList: React.FC = () => {
+const BlogListUser: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [newPost, setNewPost] = useState<Partial<Post>>({ title: '', content: '' });
   const navigate = useNavigate();
@@ -47,9 +47,6 @@ const BlogList: React.FC = () => {
       <h1>My Blog & Todo List</h1>
       <div style={{ marginBottom: '2rem' }}>
         <h2>Blog Posts</h2>
-        <Button variant="contained" color="primary" onClick={() => navigate('create')}>
-          Create New Post
-        </Button>
         <Grid container spacing={2}>
           {posts.map(post => (
             <Grid item xs={12} sm={6} md={3} key={post.id} style={{ display: 'flex' }}>
@@ -66,17 +63,6 @@ const BlogList: React.FC = () => {
                       : post.content}
                   </Typography>
                 </CardContent>
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  onClick={(e) => {
-                    e.stopPropagation(); // Prevent card click from firing
-                    handleDelete(post.id!);
-                  }}
-                  style={{ marginTop: '1rem' }}
-                >
-                  Delete
-                </Button>
               </Card>
             </Grid>
           ))}
@@ -86,4 +72,4 @@ const BlogList: React.FC = () => {
   );
 };
 
-export default BlogList;
+export default BlogListUser;

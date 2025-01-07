@@ -4,6 +4,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from "zod";
+import './css/Contact.css';
 
 const schema = zod.object({
   name: zod.string().min(1, { message: "必須項目です" }),
@@ -70,22 +71,21 @@ const FormURL =
     // まだ送信が完了していない場合、フォームを表示する
     return (
       <>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="hero">
+          <h1>お問い合わせ</h1>
+        </div>
+        <form onSubmit={handleSubmit(onSubmit)} className="form-container">
           <div className="form-item">
-            <label>
-              <p>氏名</p>
+              <h2>氏名</h2>
               <input type="text" {...register("name")} />
-            </label>
             <p className="error-message">{errors.name?.message}</p>
           </div>
           <div className="form-item">
-            <label>
-              <p>コメント</p>
+              <h2>コメント</h2>
               <textarea {...register("comment")} />
-            </label>
             <p className="error-message">{errors.comment?.message}</p>
           </div>
-          <button type="submit">送信</button>
+          <button type="submit" className="submit-button">送信</button>
         </form>
       </>
     );

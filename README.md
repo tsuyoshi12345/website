@@ -35,9 +35,6 @@ Google map（先生方と相談）
 ファイル：media.tsx
 
 ### どんな画面にする？
-参考文献
-http://www.wasedabbc.org
-
 目がチカチカしない
 
 ### 担当
@@ -47,9 +44,3 @@ http://www.wasedabbc.org
 - ブログページ：山田
 - お問い合わせとアクセスページ：矢野
 - 空撮動画・画像：堤
-
-
-
-
-READMEの書き方
-https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax

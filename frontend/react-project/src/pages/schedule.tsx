@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './css/Schedule.css';
+import '../css/Schedule.css';
 
 interface Event {
   date: string; // YYYY-MM-DD形式の日付

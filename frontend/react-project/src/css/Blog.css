@@ -1,0 +1,47 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 120px); /* 画面全体の高さを確保 */
+    padding: 1rem;
+    background-color: #f9f9f9; /* 背景色を薄いグレーに設定 */
+    box-sizing: border-box;
+  }
+  
+  .login-container .description {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333; /* 説明文を濃いグレーに設定 */
+    text-align: center; /* 中央揃え */
+    line-height: 1.5; /* 読みやすさのため行間を調整 */
+    max-width: 600px; /* 最大幅を設定 */
+    width: 100%; /* 親要素に合わせる */
+  }
+  
+  .login-container .input-field {
+    margin-bottom: 1.5rem;
+    width: 350px; /* 横幅を少し広げる */
+  }
+  
+  .login-container .submit-button {
+    width: 350px; /* ボタンの横幅を入力欄に合わせる */
+    height: 48px; /* ボタンの高さを大きくして目立たせる */
+    font-size: 1rem; /* ボタン内テキストのサイズを調整 */
+    font-weight: 600;
+  }
+  
+  .login-container .error-message {
+    margin-top: 1rem;
+    color: #e53935; /* エラーメッセージを鮮やかな赤に設定 */
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .login-container .footer {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+  }

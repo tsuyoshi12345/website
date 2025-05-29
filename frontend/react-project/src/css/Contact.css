@@ -1,0 +1,70 @@
+/* フォーム全体のスタイル */
+.form-container {
+    width: 80%; /* 画面の80%の幅 */
+    margin: 10px auto auto ; /* 中央揃え */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  /* フォーム項目のスタイル */
+  .form-item {
+    display: flex;
+    flex-direction: column; /* 縦方向に配置 */
+    align-items: flex-start; /* 左揃え */
+    margin-bottom: 20px;
+  }
+  
+  label p {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* 入力欄のスタイル */
+  input[type="text"],
+  textarea {
+    width: 100%; /* 親要素に対して幅を取る */
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  /* エラーメッセージのスタイル */
+  .error-message {
+    margin-top: 5px;
+    font-size: 12px;
+    color: red;
+  }
+  
+  /* ボタンのスタイル */
+  .submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end; /* ボタンを右端に配置 */
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
